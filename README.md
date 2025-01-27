@@ -3,7 +3,9 @@
 There is a new way to work around the lack of memory on some LG devices when running multiple LUTs for SDR, HDR and Dolby DV in `/home/root/.hyperhdr/`.
 @awawa-dev, has implemented a new compression method in HyperHDR that allows the use of compressed LUTs.
 
-The new compression method compresses the LUTs from 150 MB to less than 10 MB and decompresses them in near real time. This requires the new HyperHDR with the ZSTD compression implementation.
+The new compression method compresses the LUTs from 150 MB to less than 10 MB and decompresses them in near real time. 
+
+This requires the new HyperHDR v21.0.0.0beta2 with the ZSTD compression implementation.
 Download: https://github.com/satgit62/hyperhdr-webos-loader/actions/runs/12976750759/artifacts/2487359371
 
 The compression method is called ZSTD and HyperHDR should automatically detect that the uncompressed file like **lut_lin_tables_hdr.3d**, **lut_lin_tables_dv.3d** or **lut_lin_tables.3d** does not exist and try to find, load and apply a compressed file with the extension **.zst**.
