@@ -13,7 +13,7 @@ With normal ZSTD compression, the files shrink from about 150 MB to about 50 MB.
 
 The trick is to prepare each LUT twice with the command 'fsutil file setzerodata offset' before compressing the normal LUTs.This can be done, for example, on a Windows PC via the command line of the command prompt.
 
-Example: You have a directory LUT in C:/LUT. The LUT directory contains the uncompressed LUT files **lut_lin_tables.3d**, **lut_lin_tables_dv.3d** and **lut_lin_tables_hdr.3d**, then execute this command (Windows command line):
+Example: You have a directory LUT in `C:/LUT/`. The LUT directory contains the uncompressed LUT files **lut_lin_tables.3d**, **lut_lin_tables_dv.3d** and **lut_lin_tables_hdr.3d**, then execute this command (Windows command line):
 
 ```
 fsutil file setzerodata offset=0 length=50331648 c:\LUT\lut_lin_tables.3d
