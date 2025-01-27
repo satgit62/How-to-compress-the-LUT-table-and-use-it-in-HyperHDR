@@ -48,7 +48,7 @@ You should see the 7-zip compression settings.
 Select zstd compression.
 The recommended compression rate is 17 - maximum. It also works very well with a compression of 22.
 
-#Note: Do not change the suggested filename.
+# Note: Do not change the suggested filename.
 After creating the compressed LUT file, you can delete the uncompressed LUT file.
 
 After compressing the files, the uncompressed LUT files in `/home/root/.hyperhdr/ or /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` must be replaced with the compressed files so that they look like this:
