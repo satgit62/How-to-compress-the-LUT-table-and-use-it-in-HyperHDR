@@ -48,9 +48,9 @@ After creating the compressed LUT file, you can delete the uncompressed LUT file
 After compressing the files, the uncompressed LUT files in `/home/root/.hyperhdr/ or /media/developer/apps/usr/palm/services/org.webosbrew.hyperhdr.loader.service/hyperhdr/` must be replaced with the compressed files so that they look like this:
 
 ```
-**lut_lin_tables.3d.zst**
-**lut_lin_tables_hdr.3d.zst**
-**lut_lin_tables_dv.3d.zst**
+lut_lin_tables.3d.zst
+lut_lin_tables_hdr.3d.zst
+lut_lin_tables_dv.3d.zst
 ```
 
 For those who do not have the possibility to compress their own LUT table, I provide mine here for testing.
