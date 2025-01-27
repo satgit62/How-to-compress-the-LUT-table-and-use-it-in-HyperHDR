@@ -33,8 +33,9 @@ fsutil file setzerodata offset=100663296 length=50331648 c:\LUT\lut_lin_tables_h
 
 ![cmd](https://github.com/user-attachments/assets/c3b1211b-3665-4160-9d4d-06eef444dc9c)
 
-
 This allows you to compress more efficiently without losing any data.
+
+# 7-Zip-zstd:
 
 You will need 7-Zip-zstd on your PC, which you can download and install from https://github.com/mcmilk/7-Zip-zstd.
 
