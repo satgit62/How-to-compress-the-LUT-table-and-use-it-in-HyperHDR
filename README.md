@@ -61,7 +61,7 @@ lut_lin_tables_hdr.3d.zst
 lut_lin_tables_dv.3d.zst
 ```
 
-This is the result of the decompression time between loading an HDR LUT and switching to loading an SDR LUT on my old 2017 device, but for me, it's a very good compromise:
+This is the result of the decompression time between loading an HDR LUT and switching to loading an SDR LUT on my old 2017 device, and for me, it's a very good compromise:
 ```
 2025-01-25T12:33:09.958Z [FLATBUFSERVER] Setting user LUT filename to: 'lut_lin_tables_hdr.3d'
 2025-01-25T12:33:09.958Z [FLATBUFSERVER] Tone mapping: 1
