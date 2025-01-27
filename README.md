@@ -1,6 +1,6 @@
 # How-to-compress-the-LUT-table-and-use-it-in-HyperHDR
 
-There is a new way to work around the lack of memory on some LG devices when running multiple LUTs for SDR, HDR and Dolby DV in `/home/root/.hyperhdr/`.
+There is a new way to Workaround the lack of memory on some LG devices when running multiple LUTs for SDR, HDR and Dolby DV in `/home/root/.hyperhdr/`.
 @awawa-dev, has implemented a new compression method in HyperHDR that allows the use of compressed LUTs.
 
 The new compression method compresses the LUTs from 150 MB to less than 10 MB and decompresses them in near real time. 
