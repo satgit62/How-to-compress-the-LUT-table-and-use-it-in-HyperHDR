@@ -61,6 +61,24 @@ lut_lin_tables_hdr.3d.zst
 lut_lin_tables_dv.3d.zst
 ```
 
+This is the result of the decompression time between loading an HDR LUT and switching to loading an SDR LUT on my old 2017 device, but for me, it's a very good compromise:
+```
+2025-01-25T12:33:09.958Z [FLATBUFSERVER] Setting user LUT filename to: 'lut_lin_tables_hdr.3d'
+2025-01-25T12:33:09.958Z [FLATBUFSERVER] Tone mapping: 1
+2025-01-25T12:33:09.959Z [FLATBUFSERVER] (FlatBuffersServer.cpp:301) Adding user LUT file for searching: /home/root/.hyperhdr/lut_lin_tables_hdr.3d
+2025-01-25T12:33:09.963Z [FLATBUFSERVER] (LutLoader.cpp:73) LUT file found: /home/root/.hyperhdr/lut_lin_tables_hdr.3d.zst (compressed)
+2025-01-25T12:33:09.963Z [FLATBUFSERVER] (LutLoader.cpp:84) Index 1 for HDR YUV
+2025-01-25T12:33:11.384Z [FLATBUFSERVER] Decompression took 1.421000 seconds
+2025-01-25T12:33:11.387Z [FLATBUFSERVER] Found and loaded LUT: '/home/root/.hyperhdr/lut_lin_tables_hdr.3d'
+2025-01-25T12:33:11.388Z [FLATBUFSERVER] Setting user LUT filename to: 'lut_lin_tables.3d'
+2025-01-25T12:33:11.388Z [FLATBUFSERVER] Tone mapping: 1
+2025-01-25T12:33:11.388Z [FLATBUFSERVER] (FlatBuffersServer.cpp:301) Adding user LUT file for searching: /home/root/.hyperhdr/lut_lin_tables.3d
+2025-01-25T12:33:11.389Z [FLATBUFSERVER] (LutLoader.cpp:73) LUT file found: /home/root/.hyperhdr/lut_lin_tables.3d.zst (compressed)
+2025-01-25T12:33:11.389Z [FLATBUFSERVER] (LutLoader.cpp:84) Index 1 for HDR YUV
+2025-01-25T12:33:12.866Z [FLATBUFSERVER] Decompression took 1.477000 seconds
+2025-01-25T12:33:12.870Z [FLATBUFSERVER] Found and loaded LUT: '/home/root/.hyperhdr/lut_lin_tables.3d
+```
+
 For those who do not have the possibility to compress their own LUT table, I provide mine here for testing.
 Simply copy the three compressed LUT files to `/home/root/.hyperhdr/` and delete all other LUTs.
 
